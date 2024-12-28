@@ -7,67 +7,70 @@
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <header class="heder">
-        <h1>Sam Cards Game Store</h1>
-        <img src="logo-perro-bulldog-frances-sobre-fondo-transparente-aislado-png-ai-generativo_918839-1575.avif" alt="Logo bull dog frances">
+    <header>
+        <div>
+            <p class="txt_1">SamCards Game Store <img id="logo" src="bulldog.avif" alt="Logo bull dog frances"></p>
+        </div>         
         <nav>
-            <ul>
-                <li>Inicio</li>
-                <li>Productos</li>
-                <li>Promos</li>
-                <li>Contacto</li>
+            <ul class="menu">
+             <li><a href="#">Inicio</a></li>
+             <li><a href="" >Productos</a></li>
+             <li><a href="#">Promociones</a></li>
+             <li><a href="#">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <section class="jumbolt">
-        <h1>Bienvenido a Sam Cards Game Store</h1>
+        <h1>Bienvenido a SamCards Game Store</h1>
         <p>Aqui podras encontar productos de tus TCG´s favoritos</p>
-        <img src="tcg-photo.webp" alt="">
+        <img id="display_tcg" src="tcg-photo.webp" alt="">
     </section>
     <main>
         <section class="catalogo">
-            <h2>Catalogo de producos destacados</h2>
+            <div>
+                <h2 class="txt_catalogo">Catalogo de producos destacados</h2>
+            </div>
             <div class="productos">
                 <article>
                     <h3>Producto 1</h3>
-                    <img src="Elit trier box.jpg" alt="">
-                   <p>descripccion del producto</p>
+                    <a href="#"><img id="etb_p" src="Elit trier box.jpg" alt=""></a>
+                   <p>Elit trainer box: Champion pad </p>
                 </article>
                 <article>
                     <h3>Producto 2</h3>
-                    <img src="yu-gi-oh-expansion.jpg" alt="">
-                    <p>descripccion del producto</p>
+                    <a href="#"><img id="box_yugi" src="yu-gi-oh-expansion.jpg" alt=""></a>
+                    <p>Expansion pack: Legendary Drago deks</p>
                 </article>
                 <article>
                     <h3>Producto 3</h3>
-                    <img src="magic-tcg.webp" alt="">
-                    <p>descripccion del producto</p>
+                    <a href="#"><img id="magic" src="magic-tcg.webp" alt=""></a>
+                    <p>Expansion pack: magic</p>
                 </article>
             </div>
         </section>
-        <section class="formulario">
-            <h2>Registro de usuarios</h2>
-            <form>
-                <ul>
-                    <li>
-                        <label for="name">Nombre</label>
-                        <input type="text" name="name" id="name">
-                    </li>
-                    <li>
-                        <label for="mail">Correo electronico</label>
-                        <input type="email" id="email" name="email">
-                    </li>
-                    <li>
-                        <label for="password">Contraseña</label>
-                        <input type="password" id="password" name="password" required>
-                    </li>
-                    <li>
-                        <button type="submit">Registrate</button>
-                    </li>
-                </ul>
-            </form>
-        </section>
     </main>
+    <section class="formulario">
+        <h2>Registro de usuarios</h2>
+        <form>
+            <ul>
+                <li>
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" id="name">
+                </li>
+                <li>
+                    <label for="mail">Correo electronico</label>
+                    <input type="email" id="email" name="email">
+                </li>
+                <li>
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" required>
+                </li>
+                <li>
+                    <button type="submit">Registrate</button>
+                </li>
+            </ul>
+        </form>
+    </section>
     <footer class="footer">
         <p>Nuestras redes sociales
             <img src="log facebook.webp" alt="facebook">
