@@ -9,8 +9,6 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
     color: black;
-    display: flex;
-    flex-direction: column;
     min-height: auto;
 }
 
@@ -61,8 +59,10 @@ header nav a:hover{
 }
 
 #display_tcg{
-    width: 800px;
-    height: auto;
+    width: 900px;
+    height:auto;
+    display: inline-block;
+    min-height: auto;
 }
 
 /*Main*/
@@ -83,10 +83,19 @@ main{
 }
 
 .productos{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr; 
+    display:flex;
+    flex-direction: row;
+    gap: 45px;
     color: rgb(8, 8, 12) ;          
 }
+
+/*@media(min-width: 320px){
+    .productos{
+        display: flex;
+        flex-direction: column;
+    }*/
+}
+
 
 main section div article:hover{
     color: rgb(139, 29, 34) ;
@@ -165,10 +174,14 @@ footer{
     text-align: center;
 }
 
-header, footer {
-    flex-shrink: 0; /* No se colapsan */
+/*Media queris*/
+
+@media screen and (max-width: 900px) {
+	
 }
 
-main {
-    flex-grow: 1; /* Se expande para llenar el espacio disponible */
+@media screen and (max-width: 700px) {
+	
 }
+
+@media screen and (max-width: 600px) {
