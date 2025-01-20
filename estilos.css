@@ -85,38 +85,30 @@ main{
 .productos{
     display:flex;
     flex-direction: row;
-    gap: 45px;
+    gap: 25px;
     color: rgb(8, 8, 12) ;          
 }
-
-/*@media(min-width: 320px){
-    .productos{
-        display: flex;
-        flex-direction: column;
-    }*/
-}
-
 
 main section div article:hover{
     color: rgb(139, 29, 34) ;
 }
 
 #etb_p{
-    width: 300px;
-    height: 300px;
+    width: auto;
+    height: auto;
     padding: 10px 0 0 15px;
 }
 
 #box_yugi{
-    width: 400px;
-    height: 300px;
+    width: auto;
+    height:auto;
     padding: 10px 0 0 0;
 }
 
 #magic{
-    width: 400px;
-    height: 300px;
-    padding: 10px 0 0 0;
+    width: auto;
+    height: auto;
+    padding: 10px 15px 0 0;
 }
 
 /*Formulario*/
@@ -124,6 +116,9 @@ main section div article:hover{
 section{
     background-color:rgb(123, 26, 214) ;
     margin: 10px 10px 10px 10px;
+    padding: 20px 20px 20px 20px;
+   
+
 }
 .txt_reg{
     text-align: center;
@@ -131,13 +126,14 @@ section{
 
 .formulario{
     background-color: rgb(97, 91, 194);
-    padding: 20px;
+    margin-left: auto;
+    margin-right:auto;
+    padding:auto;
     border-radius: 10px;
     border-right-style: double;
     border-top-style: double;
     border-bottom-style: double;
     border-left-style: double;
-    margin: 10px 450px 20px 450px;
     text-align: justify;  
 }
 
@@ -151,11 +147,12 @@ section{
 .base label{
     display: flex;
     flex-direction: row;
-    font-weight: bold;   
+    font-weight: bold;  
+    width: auto; 
 }
 
 .base input{
-    padding: 5px;
+    padding: auto;
 }
 
 .base button{
@@ -165,23 +162,93 @@ section{
     cursor: pointer;
 }
 
-/*Footer*/
+/*Redes y politicas */
+
+.condiciones{
+    background-color: rgb(97, 91, 194);
+    display: flex;
+    flex-direction: row;
+}
+.politicas{
+    margin: auto;
+    padding: auto;
+}
+.lista {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px
+}
+section div ul li{
+    color: white;
+    text-decoration: none
+}
+
+section div ul li:hover{
+    color: rgb(139, 29, 34)
+}
+
+.redes{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: auto;
+}
+
+.redes-lista{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+#fb{
+    height: 40px;
+    width: 40px;
+}
+
+#ig{
+    height: 40px;
+    width: 40px;
+}
+#tw{
+    height: 40px;
+    width: 40px;
+}
+
+    /*Footer*/
 
 footer{
-    background-color:  rgb(97, 91, 194) ;
-    margin: 0 10px 10px 10px;
+    background-color:  rgb(123, 26, 214) ;
+    margin: 0 10px 2px 10px;
     padding: 10px;
     text-align: center;
 }
 
 /*Media queris*/
-
-@media screen and (max-width: 900px) {
-	
-}
-
-@media screen and (max-width: 700px) {
-	
-}
-
-@media screen and (max-width: 600px) {
+.responsive-img {
+    max-width: 100%; /* La imagen no será más ancha que su contenedor */
+    height: auto;    /* Mantiene la proporción original */
+  }
+  
+  /* Media query para pantallas pequeñas */
+  @media (max-width: 600px) {
+    .responsive-img {
+      width: 80%; /* Ajusta el ancho de las imágenes en pantallas pequeñas */
+    }
+  }
+  
+  /* Media query para pantallas medianas */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .responsive-img {
+      width: 50%; /* Ajusta el ancho en pantallas medianas */
+    }
+  }
+  
+  /* Media query para pantallas grandes */
+  @media (min-width: 1025px) {
+    .responsive-img {
+      width: 30%; /* Ajusta el ancho en pantallas grandes */
+    }
+  }
